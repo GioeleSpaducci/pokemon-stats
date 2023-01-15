@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #333
+}
+
+body {
+  background-attachment: fixed;
+  background-image: linear-gradient(180deg, #fafafa 0%, #6284FF 50%, #FF0000 100%);
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.banner {
+  width: 40%;
+}
+
+#input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+#ok-button {
+  background-color: #1B53BA;
+  border: none
+}
+
+#input button {
+  color: #fafafa;
+  width: 50px;
+  height: 30px;
+}
+
+#search-bar {
+  height: 30px;
+  font-size: 20px;
+}
+
+#clear-button {
+  color: #fafafa;
+  background-color: #E3350D;
+  border: none;
+  border-right: 1px solid #777;
+  margin-left: 10%;
+}
+
+#sort {
+  position: relative;
+}
+
+#sort-button {
+  color: #fafafa;
+  border: none;
+  background-color: #E3350D;
+}
+
+#sort-content {
+  width: 100%;
+  list-style-type: none;
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  border-top: 1px solid #777;
+  z-index: 1;
+}
+
+#sort:hover>#sort-content {
+  display: flex;
+}
+
+#sort li button {
+  width: 100%;
+  height: 30px;
+  color: #fafafa;
+  background-color: #E3350D;
+  border: none;
+}
+
+#input button:hover {
+  background-color: #30A7D7;
+}
+
+#card-container {
+  display: flex;
+  justify-content: center;
+  margin: 40px 50px;
+  flex-wrap: wrap;
+}
+
+.pokemon-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  margin: 20px;
+  padding-bottom: 20px;
+  -webkit-box-shadow: 2px 5px 15px -2px #000000;
+  -moz-box-shadow: 2px 5px 15px -2px #000000;
+  -o-box-shadow: 2px 5px 15px -2px #000000;
+  box-shadow: 2px 5px 15px -2px #000000;
+}
+
+.pokemon-card>img {
+  width: 200px;
+}
+
+.delete-button {
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  margin: -10px -10px 0 0;
+  right: 0px;
+  top: 0px;
+  border: none;
+  border-radius: 50%;
+  color: #fafafa;
+  background-color: #1B53BA;
+}
+
+.delete-button:hover {
+  background-color: #30A7D7;
+}
+
+.stats {
+  list-style-type: none;
+  width: 100%;
+  padding: 0 10px;
+}
+
+.stats>li {
+  margin-top: 3px;
+  display: flex;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  justify-content: space-between;
+  border-radius: 5px;
+  padding: 8px;
+  background-image: linear-gradient(180deg, #beeeef 80%, #5fd6ef 100%);
+}
+
+@media only screen and (max-width: 768px) {
+  .banner {
+    width: 80%;
+  }
+
+  #search-bar {
+    width: 50%;
+    font-size: 15px;
+  }
+}
